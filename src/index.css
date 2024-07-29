@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #ffffff;
+}
+
+@layer components {
+	.cards {
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		overflow-y: auto;
+		height: calc(100vh - 75px);
+	}
+
+	.cart {
+		height: calc(100vh - 75px);
+		overflow-y: auto;
+	}
+}
